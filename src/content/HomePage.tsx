@@ -1,8 +1,8 @@
 import { AppBar, Box, Button, Grid, Toolbar } from '@material-ui/core';
 import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
-import ProfilPage from './ProfilPage';
-import SearchPage from './SearchPage';
+import ProfilPage from './profil/ProfilHomePage';
+import SearchPage from './search/SearchHomePage';
 
 const HomePage = () => {
 

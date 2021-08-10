@@ -1,21 +1,17 @@
-import './App.css';
-import { Container, createTheme, CssBaseline, ThemeProvider } from '@material-ui/core';
-import HomePage from './screens/HomePage';
+import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import { BrowserRouter } from 'react-router-dom';
+import appTheme from './AppTheme';
+import MainPage from './main/MainPage';
 
 const App = () => {
-  const theme = createTheme({
-    palette: {
-      // type: "dark"
-    }
-  });
+
   return (
     <BrowserRouter>
-      <ThemeProvider theme={theme} >
+      <ThemeProvider theme={appTheme} >
         <CssBaseline />
-        <Container maxWidth='xl'>
-          <HomePage />
-        </Container>
+
+          <MainPage />
+
       </ThemeProvider>
     </BrowserRouter>
   );

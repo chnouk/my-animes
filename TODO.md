@@ -9,3 +9,8 @@
 
 * prepare backgound
 - test load data with api
+
+
+# KEEP
+
+* couleur logo : #FF0000

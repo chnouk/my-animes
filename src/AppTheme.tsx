@@ -3,7 +3,13 @@ import { createTheme } from "@material-ui/core"
 const appTheme = createTheme({
 
   palette: {
-    primary: { 500: '#467fcf' },
+    type: 'light',
+    primary: {
+      main: '#0D47A1',
+    },
+    secondary: {
+      main: '#D50000',
+    },
   },
 
 })

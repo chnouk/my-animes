@@ -19,12 +19,12 @@ const MainContent = () => {
             <Grid item container xs={2}>
                 <Grid item xs={12}>
                     <Button>
-                        <Link to="/search">SearchPage</Link>
+                        <Link to="/animes/search">Search</Link>
                     </Button>
                 </Grid>
                 <Grid item xs={12}>
                     <Button>
-                        <Link to="/profil">ProfilPage</Link>
+                        <Link to="/user/profile">Profile</Link>
                     </Button>
                 </Grid>
             </Grid>

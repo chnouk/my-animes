@@ -7,8 +7,14 @@
 
 # TODO RODOLPHE
 
+### IN PROGRESS
+
+* finalyze switches and display content
+
+### LATER
+
 * prepare backgound
-- test load data with api
+* test load data with api
 
 
 # KEEP

@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, makeStyles, Toolbar } from '@material-ui/core';
+import { AppBar, Button, makeStyles, Toolbar } from '@material-ui/core';
 import logo from '../assets/my-animes-a.svg'
 import React from 'react';
 import VideoLabelIcon from '@material-ui/icons/VideoLabel';

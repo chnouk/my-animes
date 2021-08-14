@@ -1,14 +1,17 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import AnimesSearchPage from './AnimesSearchPage';
 
 
 const AnimesSearchSwitch = () => {
 
+    const location = useLocation()
+    console.log("AnimesSearchSwitch", location);
+
     return (
     <Switch>
         
-        <Route path="/animes/search">
+        <Route exact path="/animes/search">
             <AnimesSearchPage />
         </Route>
 

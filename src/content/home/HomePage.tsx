@@ -1,12 +1,12 @@
 import { Box } from '@material-ui/core';
 import React from 'react';
 
-const AnimeHomePage = () => {
+const HomePage = () => {
 
     return (
-        <Box>AnimeHomePage</Box>
+        <Box>HomePage</Box>
     )
 
 }
 
-export default AnimeHomePage
+export default HomePage

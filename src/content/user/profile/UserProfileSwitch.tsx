@@ -8,7 +8,7 @@ const UserProfileSwitch = () => {
     return (
     <Switch>
         
-        <Route path="/user/profile">
+        <Route exact path="/user/profile">
             <UserProfilePage />
         </Route>
 

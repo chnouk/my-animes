@@ -1,20 +1,29 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import ProfilSwitch from '../content/user/profile/UserProfileSwitch';
-import SearchSwitch from '../content/animes/search/AnimesSearchSwitch';
+import HomeSwitch from '../content/home/HomeSwitch';
+import AnimeSwitch from '../content/animes/AnimeSwitch';
+import UserSwitch from '../content/user/UserSwitch';
 
 
 const MainContentSwitch = () => {
 
+    const location = useLocation()
+    console.log("MainContentSwitch", location);
+    
     return (
     <Switch>
-        
-        <Route path="/search">
-            <SearchSwitch />
+
+        <Route exact path="/">
+            <HomeSwitch />
         </Route>
 
-        <Route path="/profil">
-            <ProfilSwitch />
+        <Route path="/animes">
+            <AnimeSwitch />
+        </Route>
+
+        <Route path="/user">
+            <UserSwitch />
         </Route>
 
     </Switch>

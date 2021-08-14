@@ -9,7 +9,7 @@ const UserSwitch = () => {
     return (
     <Switch>
         
-        <Route path="/user">
+        <Route exact path="/user">
             <UserHomePage />
         </Route>
 

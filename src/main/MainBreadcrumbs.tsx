@@ -1,5 +1,5 @@
 import React from "react";
-import { Breadcrumbs, Link, Box } from "@material-ui/core";
+import { Breadcrumbs, Link, Grid, Box } from "@material-ui/core";
 import { useHistory, useLocation } from "react-router-dom";
 
 interface BreadcrumbsLinkProps {
@@ -25,21 +25,23 @@ const MainBreadcrumbs = () => {
     const pathnames = location.pathname.split("/").filter((x: any) => x);
 
     return (
-    <Breadcrumbs>
+    <Grid container style={{ marginInline: 50, marginBlock: 10 }}>
+        <Breadcrumbs>
 
-        <BreadcrumbsLink isLast={pathnames.length <= 0} name='Home' routeTo='/' />
+            <BreadcrumbsLink isLast={pathnames.length <= 0} name='Home' routeTo='/' />
 
-        {pathnames.map((name, index) => {
-      
-            const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
+            {pathnames.map((name, index) => {
+        
+                const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
 
-            const isLast = index === pathnames.length - 1;
+                const isLast = index === pathnames.length - 1;
 
-            return (<BreadcrumbsLink isLast={isLast} name={name} routeTo={routeTo} />)
+                return (<BreadcrumbsLink isLast={isLast} name={name} routeTo={routeTo} />)
 
-        })}
+            })}
 
-    </Breadcrumbs>
+        </Breadcrumbs>
+    </Grid>
   );
 };
 

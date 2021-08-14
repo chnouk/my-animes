@@ -20,7 +20,7 @@ const MainAppBar = () => {
     <AppBar position='static'>
         <Toolbar>
             <Link to='/'>
-            <img src={logo} style={{ height: '10vh', marginRight: '100px' }} alt='my-animes-logo'/>
+                <img src={logo} style={{ height: '10vh', marginRight: '100px' }} alt='my-animes-logo'/>
             </Link>
 
             <Button
@@ -29,9 +29,9 @@ const MainAppBar = () => {
                 color="secondary"
                 className={classes.button}
                 startIcon={<VideoLabelIcon />}
-            >
-                Animés
-            </Button>
+                component={Link}
+                to='/animes'
+            >Animes</Button>
 
             <Button
                 size='small'
@@ -39,6 +39,7 @@ const MainAppBar = () => {
                 color="secondary"
                 className={classes.button}
                 startIcon={<PersonalVideolIcon />}
+                disabled
             >
                 Mangas
             </Button>
@@ -49,6 +50,7 @@ const MainAppBar = () => {
                 color="secondary"
                 className={classes.button}
                 startIcon={<ForumIcon />}
+                disabled
             >
                 Forum
             </Button>

@@ -8,7 +8,7 @@ const AnimesDetailSwitch = () => {
     return (
     <Switch>
         
-        <Route path="/animes/Detail">
+        <Route exact path="/animes/Detail">
             <AnimesDetailPage />
         </Route>
 

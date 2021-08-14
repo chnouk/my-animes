@@ -1,4 +1,4 @@
-import { Box, Grid, InputAdornment, TextField } from '@material-ui/core';
+import { Grid, InputAdornment, TextField } from '@material-ui/core';
 import React from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 

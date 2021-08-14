@@ -9,7 +9,7 @@
 
 ### IN PROGRESS
 
-* finalyze switches and display content
+* finalyze app reducer
 
 ### LATER
 

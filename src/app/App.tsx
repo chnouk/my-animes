@@ -1,7 +1,7 @@
 import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import { BrowserRouter } from 'react-router-dom';
 import appTheme from './AppTheme';
-import MainPage from './main/MainPage';
+import MainPage from '../main/MainPage';
 
 const App = () => {
 

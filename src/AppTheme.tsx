@@ -1,14 +1,16 @@
 import { createTheme } from "@material-ui/core"
+import { amber } from "@material-ui/core/colors"
+import { grey } from "@material-ui/core/colors"
 
 const appTheme = createTheme({
 
   palette: {
-    type: 'light',
+    type: 'dark',
     primary: {
-      main: '#0D47A1',
+      main: grey['800'],
     },
     secondary: {
-      main: '#D50000',
+      main: amber['900'],
     },
   },
 

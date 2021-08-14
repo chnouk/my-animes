@@ -19,4 +19,5 @@
 
 # KEEP
 
-* couleur logo : #FF0000
+* orange : #FF6F00
+* background: #37474f

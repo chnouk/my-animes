@@ -5,29 +5,34 @@ import AppContainer from './AppContainer';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider as StoreProvider } from 'react-redux';
 import appStore, { appPersistor } from './AppStore';
+import AppQuery from './AppQuery';
 
 const App = () => {
 
   return (
-  <BrowserRouter>
-    
-    <StoreProvider store={appStore}>
+  <AppQuery>
 
-      <PersistGate loading={null} persistor={appPersistor}>
+    <BrowserRouter>
+      
+      <StoreProvider store={appStore}>
 
-        <ThemeProvider theme={appTheme} >
+        <PersistGate loading={null} persistor={appPersistor}>
 
-          <CssBaseline />
+          <ThemeProvider theme={appTheme} >
 
-          <AppContainer />
+            <CssBaseline />
 
-        </ThemeProvider>
-    
-        </PersistGate>
+            <AppContainer />
 
-      </StoreProvider>
-    
-    </BrowserRouter>
+          </ThemeProvider>
+      
+          </PersistGate>
+
+        </StoreProvider>
+      
+      </BrowserRouter>
+
+    </AppQuery>
   );
 }
 

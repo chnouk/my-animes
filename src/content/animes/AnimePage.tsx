@@ -4,6 +4,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppState } from '../../app/AppReducer';
 import { setAnimesSearchText } from './AnimePageSlice';
+import AnimesList from './AnimesList';
 
 const AnimePage = () => {
 
@@ -36,7 +37,11 @@ const AnimePage = () => {
         </Grid>
         <Grid item xs={2} />
 
-        <Grid item xs={12} /> 
+        <Grid item xs={12} />
+
+        <Grid item xs={12}>
+            <AnimesList />
+        </Grid>
 
     </Grid>
     )

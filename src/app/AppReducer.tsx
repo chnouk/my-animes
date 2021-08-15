@@ -1,10 +1,8 @@
 import { combineReducers } from '@reduxjs/toolkit';
 import animesReducer from '../content/animes/AnimesReducer';
 import dataReducer from '../data/DataReducer';
-import mainReducer from '../main/MainReducer';
 
 const uiReducer = combineReducers({
-  main: mainReducer,
   animes: animesReducer
 })
 

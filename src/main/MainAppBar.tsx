@@ -55,9 +55,6 @@ const MainAppBar = () => {
                 Forum
             </Button>
 
-
-
-
         </Toolbar>
     </AppBar>
     )

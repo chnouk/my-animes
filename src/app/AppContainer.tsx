@@ -1,10 +1,10 @@
 import React from 'react';
-import MainAppBar from './MainAppBar';
-import MainContent from './MainContent';
-import MainBreadcrumbs from './MainBreadcrumbs';
+import MainAppBar from '../main/MainAppBar';
+import MainContent from '../main/MainContent';
 import { Container } from '@material-ui/core';
+import MainBreadcrumbs from '../main/MainBreadcrumbs';
 
-const MainPage = () => {
+const AppContainer = () => {
 
     return (
     <Container maxWidth='lg'>
@@ -20,4 +20,4 @@ const MainPage = () => {
 
 }
 
-export default MainPage
+export default AppContainer

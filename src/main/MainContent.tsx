@@ -7,11 +7,9 @@ const MainContent = () => {
     return (
     <Paper>
         <Container maxWidth='xl'>
-            
             <Grid container>
                 <MainContentSwitch />
             </Grid>
-            
         </Container>
     </Paper>    
     )

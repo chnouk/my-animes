@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
-import AnimeHomePage from './AnimeHomePage';
+import AnimePage from './AnimePage';
 import AnimesDetailSwitch from './detail/AnimesDetailSwitch';
 import AnimesSearchSwitch from './search/AnimesSearchSwitch';
 
@@ -14,7 +14,7 @@ const AnimeSwitch = () => {
     <Switch>
         
         <Route exact path="/animes">
-            <AnimeHomePage />
+            <AnimePage />
         </Route>
 
         <Route path="/animes/search">

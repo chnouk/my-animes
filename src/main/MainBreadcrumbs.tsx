@@ -36,7 +36,7 @@ const MainBreadcrumbs = () => {
 
                 const isLast = index === pathnames.length - 1;
 
-                return (<BreadcrumbsLink isLast={isLast} name={name} routeTo={routeTo} />)
+                return (<BreadcrumbsLink key={index} isLast={isLast} name={name} routeTo={routeTo} />)
 
             })}
 

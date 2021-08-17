@@ -1,5 +1,5 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import animesReducer from '../content/animes/AnimesReducer';
+import animesReducer from '../content/anime/AnimesReducer';
 
 const uiReducer = combineReducers({
   animes: animesReducer

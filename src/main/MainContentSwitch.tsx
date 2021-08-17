@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
+import AnimeSwitch from '../content/anime/AnimeSwitch';
 import HomeSwitch from '../content/home/HomeSwitch';
-import AnimeSwitch from '../content/animes/AnimeSwitch';
 import UserSwitch from '../content/user/UserSwitch';
 
 

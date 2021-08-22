@@ -21,7 +21,7 @@ const AnimeSwitch = () => {
             <AnimesSearchSwitch />
         </Route>
 
-        <Route path="/animes/detail">
+        <Route path="/animes/:id">
             <AnimesDetailSwitch />
         </Route>
 
